@@ -1,0 +1,348 @@
+
+===== N = 1000 =====
+
+Test (fast operation)
+std::transform: 1.8e-06 sec
+seq: 1.1e-06 sec
+par: 4.29e-05 sec
+par_unseq: 2.6e-06 sec
+
+My parallel transform (threads test):
+Threads = 1 -> 1.6e-06 sec
+Threads = 2 -> 0.0003736 sec
+Threads = 3 -> 0.0001432 sec
+Threads = 4 -> 0.0001592 sec
+Threads = 5 -> 0.0001935 sec
+Threads = 6 -> 0.000222 sec
+Threads = 7 -> 0.000232 sec
+Threads = 8 -> 0.0002953 sec
+Threads = 9 -> 0.0002996 sec
+Threads = 10 -> 0.000299 sec
+Threads = 11 -> 0.000355 sec
+Threads = 12 -> 0.000357 sec
+Threads = 13 -> 0.000408 sec
+Threads = 14 -> 0.000528 sec
+Threads = 15 -> 0.0004899 sec
+Threads = 16 -> 0.0005045 sec
+Threads = 17 -> 0.0004875 sec
+Threads = 18 -> 0.0005579 sec
+Threads = 19 -> 0.0005913 sec
+Threads = 20 -> 0.0006069 sec
+Threads = 21 -> 0.0006226 sec
+Threads = 22 -> 0.0007478 sec
+Threads = 23 -> 0.0007278 sec
+Threads = 24 -> 0.0007135 sec
+Threads = 25 -> 0.000736 sec
+Threads = 26 -> 0.0007281 sec
+Threads = 27 -> 0.0007682 sec
+Threads = 28 -> 0.0007428 sec
+Threads = 29 -> 0.000913 sec
+Threads = 30 -> 0.0009215 sec
+Threads = 31 -> 0.0008903 sec
+Threads = 32 -> 0.0009244 sec
+Threads = 33 -> 0.0009373 sec
+Threads = 34 -> 0.000963 sec
+Threads = 35 -> 0.0011199 sec
+Threads = 36 -> 0.0010635 sec
+Threads = 37 -> 0.0010254 sec
+Threads = 38 -> 0.0010309 sec
+Threads = 39 -> 0.0011056 sec
+Threads = 40 -> 0.0010978 sec
+Threads = 41 -> 0.0013531 sec
+Threads = 42 -> 0.0012116 sec
+Threads = 43 -> 0.0012748 sec
+Threads = 44 -> 0.0012983 sec
+Threads = 45 -> 0.0014243 sec
+Threads = 46 -> 0.0014767 sec
+Threads = 47 -> 0.0014797 sec
+Threads = 48 -> 0.0013478 sec
+Best = 1, hardware threads = 12, ratio = 0.0833333
+
+Test (slow operation)
+std::transform: 0.0002798 sec
+seq: 0.0002797 sec
+par: 0.0001293 sec
+par_unseq: 8.59e-05 sec
+
+My parallel transform (threads test):
+Threads = 1 -> 0.0002797 sec
+Threads = 2 -> 0.0002452 sec
+Threads = 3 -> 0.0002195 sec
+Threads = 4 -> 0.0002179 sec
+Threads = 5 -> 0.000237 sec
+Threads = 6 -> 0.0002555 sec
+Threads = 7 -> 0.0002656 sec
+Threads = 8 -> 0.0003234 sec
+Threads = 9 -> 0.0003328 sec
+Threads = 10 -> 0.0003389 sec
+Threads = 11 -> 0.0003512 sec
+Threads = 12 -> 0.0003781 sec
+Threads = 13 -> 0.0004962 sec
+Threads = 14 -> 0.0004978 sec
+Threads = 15 -> 0.0004793 sec
+Threads = 16 -> 0.0004793 sec
+Threads = 17 -> 0.0005107 sec
+Threads = 18 -> 0.0005337 sec
+Threads = 19 -> 0.0005633 sec
+Threads = 20 -> 0.000594 sec
+Threads = 21 -> 0.0006241 sec
+Threads = 22 -> 0.0007513 sec
+Threads = 23 -> 0.0008234 sec
+Threads = 24 -> 0.0007009 sec
+Threads = 25 -> 0.0006933 sec
+Threads = 26 -> 0.0007616 sec
+Threads = 27 -> 0.0008005 sec
+Threads = 28 -> 0.0009663 sec
+Threads = 29 -> 0.0012226 sec
+Threads = 30 -> 0.0008454 sec
+Threads = 31 -> 0.000889 sec
+Threads = 32 -> 0.0008785 sec
+Threads = 33 -> 0.0009328 sec
+Threads = 34 -> 0.0009624 sec
+Threads = 35 -> 0.0010841 sec
+Threads = 36 -> 0.0010297 sec
+Threads = 37 -> 0.0010749 sec
+Threads = 38 -> 0.0010448 sec
+Threads = 39 -> 0.0010925 sec
+Threads = 40 -> 0.0012453 sec
+Threads = 41 -> 0.001198 sec
+Threads = 42 -> 0.0011791 sec
+Threads = 43 -> 0.0012551 sec
+Threads = 44 -> 0.001232 sec
+Threads = 45 -> 0.0013375 sec
+Threads = 46 -> 0.0012693 sec
+Threads = 47 -> 0.0013347 sec
+Threads = 48 -> 0.0013135 sec
+Best = 4, hardware threads = 12, ratio = 0.333333
+
+===== N = 100000 =====
+
+Test (fast operation)
+std::transform: 0.0001293 sec
+seq: 0.0001078 sec
+par: 7.9e-05 sec
+par_unseq: 6.16e-05 sec
+
+My parallel transform (threads test):
+Threads = 1 -> 0.0001347 sec
+Threads = 2 -> 0.0001653 sec
+Threads = 3 -> 0.0001589 sec
+Threads = 4 -> 0.000178 sec
+Threads = 5 -> 0.0001903 sec
+Threads = 6 -> 0.0002012 sec
+Threads = 7 -> 0.0002277 sec
+Threads = 8 -> 0.0002733 sec
+Threads = 9 -> 0.0002779 sec
+Threads = 10 -> 0.000317 sec
+Threads = 11 -> 0.0003387 sec
+Threads = 12 -> 0.0003789 sec
+Threads = 13 -> 0.0004092 sec
+Threads = 14 -> 0.0004533 sec
+Threads = 15 -> 0.000491 sec
+Threads = 16 -> 0.0005041 sec
+Threads = 17 -> 0.0005049 sec
+Threads = 18 -> 0.0005318 sec
+Threads = 19 -> 0.0005427 sec
+Threads = 20 -> 0.0005736 sec
+Threads = 21 -> 0.0005956 sec
+Threads = 22 -> 0.0006486 sec
+Threads = 23 -> 0.0006514 sec
+Threads = 24 -> 0.0007469 sec
+Threads = 25 -> 0.0007186 sec
+Threads = 26 -> 0.0007291 sec
+Threads = 27 -> 0.0008021 sec
+Threads = 28 -> 0.0007622 sec
+Threads = 29 -> 0.0007939 sec
+Threads = 30 -> 0.0008489 sec
+Threads = 31 -> 0.0009208 sec
+Threads = 32 -> 0.0009495 sec
+Threads = 33 -> 0.0009132 sec
+Threads = 34 -> 0.0008855 sec
+Threads = 35 -> 0.0009088 sec
+Threads = 36 -> 0.0009645 sec
+Threads = 37 -> 0.0010515 sec
+Threads = 38 -> 0.0010128 sec
+Threads = 39 -> 0.0010493 sec
+Threads = 40 -> 0.0012086 sec
+Threads = 41 -> 0.0011315 sec
+Threads = 42 -> 0.0012781 sec
+Threads = 43 -> 0.001143 sec
+Threads = 44 -> 0.0011386 sec
+Threads = 45 -> 0.0011592 sec
+Threads = 46 -> 0.0012093 sec
+Threads = 47 -> 0.0013973 sec
+Threads = 48 -> 0.0013458 sec
+Best = 1, hardware threads = 12, ratio = 0.0833333
+
+Test (slow operation)
+std::transform: 0.0281272 sec
+seq: 0.0282659 sec
+par: 0.0029765 sec
+par_unseq: 0.0026932 sec
+
+My parallel transform (threads test):
+Threads = 1 -> 0.0280116 sec
+Threads = 2 -> 0.0144816 sec
+Threads = 3 -> 0.0100483 sec
+Threads = 4 -> 0.0072148 sec
+Threads = 5 -> 0.0064072 sec
+Threads = 6 -> 0.004879 sec
+Threads = 7 -> 0.0046221 sec
+Threads = 8 -> 0.00411 sec
+Threads = 9 -> 0.0037235 sec
+Threads = 10 -> 0.0034904 sec
+Threads = 11 -> 0.0031803 sec
+Threads = 12 -> 0.0036207 sec
+Threads = 13 -> 0.0041363 sec
+Threads = 14 -> 0.0043155 sec
+Threads = 15 -> 0.0044157 sec
+Threads = 16 -> 0.0038261 sec
+Threads = 17 -> 0.0038468 sec
+Threads = 18 -> 0.003669 sec
+Threads = 19 -> 0.0035184 sec
+Threads = 20 -> 0.0034509 sec
+Threads = 21 -> 0.0033393 sec
+Threads = 22 -> 0.0035062 sec
+Threads = 23 -> 0.0031628 sec
+Threads = 24 -> 0.0040449 sec
+Threads = 25 -> 0.0037904 sec
+Threads = 26 -> 0.0035134 sec
+Threads = 27 -> 0.0036539 sec
+Threads = 28 -> 0.003799 sec
+Threads = 29 -> 0.0038616 sec
+Threads = 30 -> 0.0037216 sec
+Threads = 31 -> 0.0035483 sec
+Threads = 32 -> 0.0035158 sec
+Threads = 33 -> 0.0034584 sec
+Threads = 34 -> 0.0033806 sec
+Threads = 35 -> 0.0035138 sec
+Threads = 36 -> 0.0034229 sec
+Threads = 37 -> 0.0036663 sec
+Threads = 38 -> 0.0032134 sec
+Threads = 39 -> 0.0034723 sec
+Threads = 40 -> 0.0034821 sec
+Threads = 41 -> 0.0034798 sec
+Threads = 42 -> 0.0034623 sec
+Threads = 43 -> 0.0035248 sec
+Threads = 44 -> 0.0035344 sec
+Threads = 45 -> 0.0034118 sec
+Threads = 46 -> 0.0035504 sec
+Threads = 47 -> 0.0037961 sec
+Threads = 48 -> 0.003899 sec
+Best = 23, hardware threads = 12, ratio = 1.91667
+
+===== N = 1000000 =====
+
+Test (fast operation)
+std::transform: 0.0012956 sec
+seq: 0.0010787 sec
+par: 0.0001862 sec
+par_unseq: 0.0001979 sec
+
+My parallel transform (threads test):
+Threads = 1 -> 0.0010891 sec
+Threads = 2 -> 0.0006699 sec
+Threads = 3 -> 0.0004963 sec
+Threads = 4 -> 0.0004236 sec
+Threads = 5 -> 0.0005015 sec
+Threads = 6 -> 0.0004035 sec
+Threads = 7 -> 0.0003874 sec
+Threads = 8 -> 0.0003869 sec
+Threads = 9 -> 0.0003918 sec
+Threads = 10 -> 0.0003953 sec
+Threads = 11 -> 0.0004172 sec
+Threads = 12 -> 0.0004146 sec
+Threads = 13 -> 0.0004423 sec
+Threads = 14 -> 0.0004892 sec
+Threads = 15 -> 0.0004685 sec
+Threads = 16 -> 0.0005605 sec
+Threads = 17 -> 0.0005523 sec
+Threads = 18 -> 0.0005586 sec
+Threads = 19 -> 0.000545 sec
+Threads = 20 -> 0.0005609 sec
+Threads = 21 -> 0.0006132 sec
+Threads = 22 -> 0.0006177 sec
+Threads = 23 -> 0.0006633 sec
+Threads = 24 -> 0.0006989 sec
+Threads = 25 -> 0.000806 sec
+Threads = 26 -> 0.000699 sec
+Threads = 27 -> 0.0007483 sec
+Threads = 28 -> 0.0007759 sec
+Threads = 29 -> 0.0007351 sec
+Threads = 30 -> 0.000792 sec
+Threads = 31 -> 0.0008129 sec
+Threads = 32 -> 0.0009182 sec
+Threads = 33 -> 0.0008657 sec
+Threads = 34 -> 0.0009119 sec
+Threads = 35 -> 0.0009166 sec
+Threads = 36 -> 0.0009554 sec
+Threads = 37 -> 0.0009629 sec
+Threads = 38 -> 0.0011915 sec
+Threads = 39 -> 0.0011167 sec
+Threads = 40 -> 0.0011054 sec
+Threads = 41 -> 0.0010993 sec
+Threads = 42 -> 0.0011022 sec
+Threads = 43 -> 0.0011786 sec
+Threads = 44 -> 0.0011881 sec
+Threads = 45 -> 0.0011471 sec
+Threads = 46 -> 0.0012407 sec
+Threads = 47 -> 0.001241 sec
+Threads = 48 -> 0.0013541 sec
+Best = 8, hardware threads = 12, ratio = 0.666667
+
+Test (slow operation)
+std::transform: 0.280383 sec
+seq: 0.280925 sec
+par: 0.0261993 sec
+par_unseq: 0.0264422 sec
+
+My parallel transform (threads test):
+Threads = 1 -> 0.280245 sec
+Threads = 2 -> 0.140104 sec
+Threads = 3 -> 0.0936691 sec
+Threads = 4 -> 0.0702563 sec
+Threads = 5 -> 0.0601771 sec
+Threads = 6 -> 0.0486488 sec
+Threads = 7 -> 0.0447574 sec
+Threads = 8 -> 0.0386381 sec
+Threads = 9 -> 0.0347464 sec
+Threads = 10 -> 0.031445 sec
+Threads = 11 -> 0.0287586 sec
+Threads = 12 -> 0.0269954 sec
+Threads = 13 -> 0.0432491 sec
+Threads = 14 -> 0.041255 sec
+Threads = 15 -> 0.0387924 sec
+Threads = 16 -> 0.0359055 sec
+Threads = 17 -> 0.0369244 sec
+Threads = 18 -> 0.0351654 sec
+Threads = 19 -> 0.0320311 sec
+Threads = 20 -> 0.031542 sec
+Threads = 21 -> 0.0313744 sec
+Threads = 22 -> 0.0314413 sec
+Threads = 23 -> 0.0296142 sec
+Threads = 24 -> 0.0283957 sec
+Threads = 25 -> 0.0326298 sec
+Threads = 26 -> 0.0321187 sec
+Threads = 27 -> 0.0312701 sec
+Threads = 28 -> 0.0311399 sec
+Threads = 29 -> 0.0318958 sec
+Threads = 30 -> 0.0314428 sec
+Threads = 31 -> 0.0305233 sec
+Threads = 32 -> 0.0301636 sec
+Threads = 33 -> 0.0302388 sec
+Threads = 34 -> 0.0296628 sec
+Threads = 35 -> 0.0294774 sec
+Threads = 36 -> 0.0304367 sec
+Threads = 37 -> 0.0305621 sec
+Threads = 38 -> 0.0310182 sec
+Threads = 39 -> 0.0298136 sec
+Threads = 40 -> 0.029408 sec
+Threads = 41 -> 0.0304677 sec
+Threads = 42 -> 0.0302665 sec
+Threads = 43 -> 0.0291881 sec
+Threads = 44 -> 0.0301481 sec
+Threads = 45 -> 0.0300079 sec
+Threads = 46 -> 0.0296862 sec
+Threads = 47 -> 0.029741 sec
+Threads = 48 -> 0.0287946 sec
+Best = 12, hardware threads = 12, ratio = 1
